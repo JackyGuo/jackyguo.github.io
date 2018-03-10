@@ -40,6 +40,8 @@ header .navbar {
         -o-transition: 0.5s; }
       header .navbar .navbar-nav li a:visited {
         color: #FFFFFF; }
+    header .navbar .navbar-nav li img {
+      cursor: pointer; }
 
 /* ===== Footer ===== */
 footer {
