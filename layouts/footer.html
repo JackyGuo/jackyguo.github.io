@@ -48,7 +48,7 @@
         </p>
       </div>
       <div class="col-sm-3 col-xs-12 text-right">
-        <a href="/" id="company" data-localize="footer.company" class="navbar-brand"></a>
+        <a href="/" id="footer-company" data-localize="footer.company" class="navbar-brand"></a>
       </div>
     </div>
   </div>
@@ -74,9 +74,9 @@
 <script>
   $(function () {
       if (getCookie(name) == "cn") {
-          $("#company").html("<img src='assets/images/name_white.png'>")
+          $("#footer-company").html("<img src='assets/images/name_white.png'>")
       } else if (getCookie(name) == "en") {
-          $("#company").html("Wisteria Club")
+          $("#footer-company").html("Wisteria Club")
       }
   })
 </script>
