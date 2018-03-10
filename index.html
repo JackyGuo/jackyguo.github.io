@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/2330/45817/5aa2a175f629d91724646a3b.css' rel='stylesheet' type='text/css' />
+
+    <link type='text/css' rel="stylesheet" href="assets/stylesheets/custom.css" />
+    <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
+    <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap-grid.min.css" />
+    <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap-reboot.min.css" />
+    <link type='text/css' rel="stylesheet" href="assets/stylesheets/fontawesome-all.min.css" />
+
+    <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/jquery.localize.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/language.js"></script>
+
+    <title>Wisteria Club</title>
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <div class="page-home">
+      <section id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <div class="highlight text-center">
+                <div class="title" data-localize="home.title"></div>
+                <div class="content text-center" data-localize="home.content"></div>
+                <a href="/about" onclick="scrollToSection('#about'); return false;" class="btn-about-us" data-localize="home.button"></a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="text-center">
+                <img src="assets/images/logo.png" alt="" class="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="title" data-localize="header.about"></div>
+              <hr>
+              <p data-localize="about.content"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="text-center">
+        <div class="container">
+          <div class="title" data-localize="header.services"></div>
+          <hr>
+          <div class="row items">
+            <div class="col-md">
+              <div class="item">
+                <i class="fab fa-connectdevelop"></i>
+              </div>
+              <div class="item-name" data-localize="services.hand_painting"></div>
+            </div>
+            <div class="col-md">
+              <div class="item">
+                <i class="fab fa-fort-awesome"></i>
+              </div>
+              <div class="item-name" data-localize="services.celebration"></div>
+            </div>
+            <div class="col-md">
+              <div class="item">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <div class="item-name" data-localize="services.signing"></div>
+            </div>
+            <div class="col-md">
+              <div class="item">
+                <i class="far fa-music"></i>
+              </div>
+              <div class="item-name" data-localize="services.performance"></div>
+            </div>
+            <div class="col-md">
+              <div class="item">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="item-name" data-localize="services.charity"></div>
+            </div>
+            <div class="col-md">
+              <div class="item">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="item-name" data-localize="services.communication"></div>
+            </div>
+            <div class="col-md">
+              <div class="item">
+                <i class="fas fa-trophy-alt"></i>
+              </div>
+              <div class="item-name" data-localize="services.planning">></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="title" data-localize="header.gallery"></div>
+              <hr>
+              <div class="pics">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="assets/images/pic_1.jpeg" class="w-100 img-thumbnail" alt="">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/images/pic_2.jpg" class="w-100 img-thumbnail" alt="">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/images/pic_3.jpg" class="w-100 img-thumbnail" alt="">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="assets/images/pic_4.jpg" class="w-100 img-thumbnail" alt="">
+                  </div>
+                </div>
+              </div>
+              <a href="#" data-localize="gallery.button" class="btn-more"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="contact" class="footer"></footer>
+  </body>
+
+  <script>
+    $("header").load("layouts/header.html");
+    $("footer").load("layouts/footer.html");
+    $(function () {
+        if (getCookie(name) == "cn") {
+            $(".highlight").prepend("<div class='space'></div>")
+        }
+    })
+  </script>
+</html>
+
