@@ -88,10 +88,8 @@ footer {
 .page-home #home {
   min-height: 650px;
   color: #FFFFFF; }
-  .page-home #home .space {
-    height: 40px; }
   .page-home #home .highlight {
-    padding-top: 80px; }
+    padding-top: 120px; }
     .page-home #home .highlight .title {
       font-size: 24px;
       font-weight: bold;
