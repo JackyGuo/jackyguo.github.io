@@ -20,13 +20,10 @@ function getCookie(name)//取cookies函数
 
 $(function() {
 
-    if (getCookie(name) != "") {
-        if (getCookie(name) == "cn") {
-            $("[data-localize]").localize("text", {pathPrefix: "lang", language: "cn"});
-        }
-        if (getCookie(name) == "en") {
-            $("[data-localize]").localize("text", {pathPrefix: "lang", language: "en"});
-        }
+    if (getCookie(name) == "cn") {
+        $("[data-localize]").localize("text", {pathPrefix: "lang", language: "cn"});
+    } else {
+        $("[data-localize]").localize("text", {pathPrefix: "lang", language: "en"});
     }
     //根据cookie选择语言
 
