@@ -18,8 +18,8 @@ $purple: #5c1659;
 
 html {
   body {
-    background-image: url("../images/home3.png");
-    background-size: 110%;
+    background-image: url("../images/webp/home.webp");
+    background-size: auto;
     a {
       &:hover {
         text-decoration: none;
@@ -37,11 +37,17 @@ header {
     border: 0;
     padding: 0px;
     min-height: 110px;
+    .navbar-toggler {
+      color: $white;
+    }
     .navbar-brand {
       color: $white;
       font-weight: bold;
       font-family:'ChannelSlanted2';
       font-size: 26px;
+      @media (max-width: 576px) {
+        font-size: 20px;
+      }
       img {
         width: 160px;
       }
@@ -92,31 +98,48 @@ footer {
   }
   .upper {
     background: $footer_upper;
-    padding: 80px 0;
-
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .navbar-brand {
-      color: $white;
-      font-family:'ChannelSlanted2';
-      font-size: 20px;
-      margin-top: 10px;
-      img {
-        width: 180px;
+    padding: 50px 0 50px 0;
+    .wrapper {
+      margin: 30px 0;
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .navbar-brand {
+        color: $white;
+        font-family:'ChannelSlanted2';
+        font-size: 20px;
+        margin-top: 10px;
+        img {
+          width: 180px;
+        }
       }
     }
   }
   .lower {
     background: $footer_lower;
     padding: 5px 0;
+    p {
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+    }
+
     .icons {
       margin-top: 2px;
       margin-bottom: 0;
+      text-align: right;
+      @media (max-width: 576px) {
+        text-align: center;
+        margin-top: 20px;
+      }
       .icon {
-        margin-left: 10px;
+        margin: 0 5px;
+        display: inline-block;
         i {
           font-size: 25px;
         }
@@ -134,10 +157,13 @@ footer {
     margin-bottom: 50px;
   }
   #home {
-    min-height: 650px;
+    min-height: 640px;
     color: $white;
     .highlight {
       padding-top: 120px;
+      @media (max-width: 576px) {
+        padding-top: 75px;
+      }
       .title {
         font-size: 24px;
         font-weight: bold;
@@ -149,7 +175,7 @@ footer {
         line-height: 30px;
       }
       .btn-about-us {
-        margin-top: 40px;
+        margin: 40px 0 20px 0;
         padding: 18px 30px;
         border: 2px solid $white;
         font-size: 14px;
@@ -164,8 +190,11 @@ footer {
       }
     }
     .logo {
-      margin-top: 40px;
+      margin: 40px 0 80px 0;
       width: 600px;
+      @media (max-width: 576px) {
+        width: 350px;
+      }
     }
   }
   #about {
@@ -182,7 +211,7 @@ footer {
     }
   }
   #services {
-    padding: 140px 0;
+    padding: 90px 0;
     background: $black;
     .title {
       font-weight: bold;
@@ -196,22 +225,26 @@ footer {
       color: $white;
       margin-top: 50px;
       .item {
-        font-size: 48px;
-        width: 130px;
-        padding: 27px 0;
-        border: 2px solid $white;
-        border-radius: 65px;
-        @include transition;
-        &:hover {
-          background: $white;
-          color: $black;
+        text-align: center;
+        padding: 0 0 50px 0;
+        .icon {
+          display: inline-block;
+          border: 2px solid $white;
+          padding: 27px 0;
+          width: 130px;
+          font-size: 48px;
+          border-radius: 65px;
           @include transition;
-          cursor: pointer;
+          &:hover {
+            background: $white;
+            color: $black;
+          }
         }
-      }
-      .item-name {
-        margin-top: 20px;
-        font-size: 16px;
+
+        .name {
+          margin-top: 20px;
+          font-size: 16px;
+        }
       }
     }
   }
@@ -231,6 +264,22 @@ footer {
     }
     .pics {
       margin-top: 60px;
+      .hide {
+        display: none;
+      }
+      .pic {
+        width:100%;
+        height:0;
+        padding-bottom: 56%;
+        overflow:hidden;
+        margin-bottom: 30px;
+        .up {
+          margin-top: -80px;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
     }
     .btn-more {
       margin-top: 60px;
