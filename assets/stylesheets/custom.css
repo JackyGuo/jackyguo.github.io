@@ -1,7 +1,7 @@
 /* ===== Mixin ===== */
 /* ===== Universe ===== */
 html body {
-  background-image: url("../images/webp/home.webp");
+  background-image: url("../images/home.png");
   background-size: auto; }
   html body a:hover {
     text-decoration: none; }

@@ -11,7 +11,7 @@
         <li><a href="/" data-localize="header.gallery" onclick="scrollToSection('#gallery'); return false;">Moments</a></li>
         <li><a href="/" data-localize="header.contact" onclick="scrollToSection('#contact'); return false;">Contact Us</a></li>
         <li>
-          <img src="assets/images/webp/cn.webp" alt="" onclick="chgLang('cn');"> / <img src="assets/images/webp/us.webp" alt="" onclick="chgLang('en');">
+          <img src="assets/images/cn.png" alt="" onclick="chgLang('cn');"> / <img src="assets/images/us.png" alt="" onclick="chgLang('en');">
         </li>
       </ul>
     </div>
@@ -21,7 +21,7 @@
 <script>
   $(function () {
       if (getCookie(name) == "cn") {
-          $("#company").html("<img src='assets/images/webp/name_white.webp'>")
+          $("#company").html("<img src='assets/images/name_white.png'>")
       } else if (getCookie(name) == "en") {
           $("#company").html("Wisteria Club")
       }
