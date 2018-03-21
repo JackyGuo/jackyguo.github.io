@@ -2,29 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <!-- mobile layout config -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+
+    <!-- load logo css stylesheet -->
     <link href='https://cdn.webfont.youziku.com/webfonts/nomal/2330/45817/5aa2a175f629d91724646a3b.css' rel='stylesheet' type='text/css' />
 
+    <!-- load third-party css files -->
     <link type='text/css' rel="stylesheet" href="assets/stylesheets/custom.css" />
     <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
-    <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap-grid.min.css" />
-    <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap-reboot.min.css" />
     <link type='text/css' rel="stylesheet" href="assets/stylesheets/fontawesome-all.min.css" />
     <link type='text/css' rel="stylesheet" href="assets/stylesheets/lity.min.css" />
 
+    <!-- load third-party js files -->
     <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascripts/jquery.localize.min.js"></script>
     <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javascripts/language.js"></script>
     <script type="text/javascript" src="assets/javascripts/lity.min.js"></script>
 
+    <!-- page title -->
     <title data-localize="company">Wisteria Club</title>
   </head>
-  <body>
-    <header class="header"></header>
 
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div id="company" class="navbar-brand"></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav navbar-nav">
+              <li><a href="/" data-localize="header.about" onclick="scrollToSection('#about'); return false;"></a></li>
+              <li><a href="/" data-localize="header.services" onclick="scrollToSection('#services'); return false;"></a></li>
+              <li><a href="/" data-localize="header.gallery" onclick="scrollToSection('#gallery'); return false;"></a></li>
+              <li><a href="/" data-localize="header.team" onclick="scrollToSection('#team'); return false;"></a></li>
+              <li><a href="/" data-localize="header.contact" onclick="scrollToSection('#contact'); return false;"></a></li>
+              <li>
+                <img src="assets/images/cn.png" alt="" onclick="chgLang('cn');"> / <img src="assets/images/us.png" alt="" onclick="chgLang('en');">
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
     <div class="page-home">
+
+      <!-- home -->
       <section id="home">
         <div class="container">
           <div class="row">
@@ -45,6 +75,7 @@
         </div>
       </section>
 
+      <!-- about us -->
       <section id="about" class="text-center">
         <div class="container">
           <div class="row justify-content-center">
@@ -58,6 +89,7 @@
         </div>
       </section>
 
+      <!-- services -->
       <section id="services" class="text-center">
         <div class="container">
           <div class="title" data-localize="header.services">Services</div>
@@ -109,6 +141,7 @@
         </div>
       </section>
 
+      <!-- gallery -->
       <section id="gallery" class="text-center">
         <div class="container">
           <div class="row justify-content-center">
@@ -194,14 +227,224 @@
           </div>
         </div>
       </section>
+
+      <!-- team -->
+      <section id="team" class="text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="title" data-localize="header.team">Team</div>
+              <hr>
+            </div>
+            <div class="col-md-3 member text-center">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_1"></div>
+                <img src="assets/images/avatar_1.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="name" data-localize="team.names.first"></div>
+              <div class="position" data-localize="team.positions.first"></div>
+            </div>
+            <div class="col-md-3 member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_2"></div>
+                <img src="assets/images/avatar_2.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="name" data-localize="team.names.second"></div>
+              <div class="position" data-localize="team.positions.second"></div>
+            </div>
+            <div class="col-md-3 member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_3"></div>
+                <img src="assets/images/avatar_3.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="name" data-localize="team.names.third"></div>
+              <div class="position" data-localize="team.positions.third"></div>
+            </div>
+            <div class="col-md-3 member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_4"></div>
+                <img src="assets/images/avatar_4.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="name" data-localize="team.names.forth"></div>
+              <div class="position" data-localize="team.positions.forth"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <footer id="contact" class="footer"></footer>
-  </body>
+    <!-- 1st team member modal -->
+    <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" data-localize="team.names.first"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body" data-localize="team.descs.first">
 
-  <script>
-    $("header").load("layouts/header.html");
-    $("footer").load("layouts/footer.html");
-  </script>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd team member modal -->
+    <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" data-localize="team.names.second"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body" data-localize="team.descs.second">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd team member modal -->
+    <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" data-localize="team.names.third"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body" data-localize="team.descs.third">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4th team member modal -->
+    <div class="modal fade" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" data-localize="team.names.forth"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body" data-localize="team.descs.forth">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="contact" class="footer">
+      <div class="upper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-sm-3">
+              <div class="wrapper">
+                <div class="title"><span data-localize="header.contact">Contact Us</span></div>
+                <p>
+                  <span data-localize="company">Wisteria Club</span>
+                  <br>
+                  221B Baker Street
+                  <br>
+                  020-1234-088
+                  <br>
+                  example@wisteriaclub.com
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-3">
+              <div class="wrapper">
+                <div class="title"><span data-localize="header.services">Services</span></div>
+                <p>
+                  <span data-localize="services.hand_painting">Hand Painting</span>
+                  <br>
+                  <span data-localize="services.celebration">Celebration</span>
+                  <br>
+                  <span data-localize="services.signing">Contract Signing</span>
+                  <br>
+                  <span data-localize="services.performance">Performance</span>
+                  <br>
+                  <span data-localize="services.charity">Charity</span>
+                  <br>
+                  <span data-localize="services.communication">Communication</span>
+                  <br>
+                  <span data-localize="services.planning">Activity Planning</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-3">
+              <div class="wrapper">
+                <div class="title" data-localize="footer.site_map">Site Map</div>
+                <p>
+                  <a href="#" data-localize="header.home" onclick="scrollToSection('header'); return false;">Home</a>
+                  <br>
+                  <a href="#" data-localize="header.about" onclick="scrollToSection('#about'); return false;">About Us</a>
+                  <br>
+                  <a href="#" data-localize="header.services" onclick="scrollToSection('#services'); return false;">Services</a>
+                  <br>
+                  <a href="#" data-localize="header.gallery" onclick="scrollToSection('#gallery'); return false;">Gallery</a>
+                  <br>
+                  <a href="#" data-localize="header.team" onclick="scrollToSection('#team'); return false;">Team</a>
+                  <br>
+                  <a href="#" data-localize="header.contact" onclick="scrollToSection('#contact'); return false;">Contact Us</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-right">
+              <div class="wrapper">
+                <a href="/" id="footer-company" data-localize="footer.company" class="navbar-brand"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <p data-localize="footer.bottom_line">Wisteria Club - A Boutique Events Company Based in London</p>
+            </div>
+            <div class="col-md-3 ">
+              <div class="icons">
+                <div class="icon"><i class="fab fa-facebook-square"></i></div>
+                <div class="icon"><i class="fab fa-twitter-square"></i></div>
+                <div class="icon"><i class="fab fa-weibo"></i></div>
+                <div class="icon"><i class="fab fa-weixin"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<!-- custom javascript scripts -->
+<script>
+  $(function () {
+    if (getCookie(name) == "cn") {
+      $("#company").html("<img src='assets/images/name_white.png'>")
+      $("#footer-company").html("<img src='assets/images/name_white.png'>")
+    } else {
+      $("#company").html("Wisteria Club")
+      $("#footer-company").html("Wisteria Club")
+    }
+  })
+
+  function scrollToSection(name) {
+    $("html, body").animate({scrollTop: $(name).offset().top}, 500);
+  }
+</script>
 

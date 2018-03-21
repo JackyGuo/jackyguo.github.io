@@ -211,7 +211,7 @@ footer {
     }
   }
   #services {
-    padding: 90px 0;
+    padding: 120px 0;
     background: $black;
     .title {
       font-weight: bold;
@@ -249,7 +249,7 @@ footer {
     }
   }
   #gallery {
-    padding: 140px 0;
+    padding: 120px 0;
     background: $white;
     .title {
       font-weight: bold;
@@ -294,6 +294,54 @@ footer {
         background: $black;
         color: $white;
         @include transition;
+      }
+    }
+  }
+
+  #team {
+    padding: 120px 0;
+    background: $black;
+    color: $white;
+    .title {
+      font-weight: bold;
+      font-size: 36px;
+      color: $white;
+    }
+    hr {
+      border-bottom: 4px solid $white;
+    }
+    .member {
+      .avatar {
+        margin-bottom: 20px;
+        position: relative;
+        img {
+          position: relative;
+          width: 150px;
+          border-radius: 75px;
+          z-index: 0;
+        }
+        .layer {
+          z-index: 1;
+          border-radius: 75px;
+          display: inline-block;
+          position: absolute;
+          width: 150px;
+          padding: 75px;
+          background: transparent;
+          cursor: pointer;
+          @include  transition;
+          &:hover {
+            @include transition;
+            background: $black;
+            opacity: 0.6;
+
+          }
+        }
+      }
+      .name {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
       }
     }
   }

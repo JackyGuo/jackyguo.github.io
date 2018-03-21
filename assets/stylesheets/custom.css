@@ -154,7 +154,7 @@ footer {
     line-height: 30px;
     font-size: 16px; }
 .page-home #services {
-  padding: 90px 0;
+  padding: 120px 0;
   background: #423A36; }
   .page-home #services .title {
     font-weight: bold;
@@ -186,7 +186,7 @@ footer {
         margin-top: 20px;
         font-size: 16px; }
 .page-home #gallery {
-  padding: 140px 0;
+  padding: 120px 0;
   background: #FFFFFF; }
   .page-home #gallery .title {
     font-weight: bold;
@@ -230,5 +230,47 @@ footer {
       -moz-transition: 0.5s;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s; }
+.page-home #team {
+  padding: 120px 0;
+  background: #423A36;
+  color: #FFFFFF; }
+  .page-home #team .title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF; }
+  .page-home #team hr {
+    border-bottom: 4px solid #FFFFFF; }
+  .page-home #team .member .avatar {
+    margin-bottom: 20px;
+    position: relative; }
+    .page-home #team .member .avatar img {
+      position: relative;
+      width: 150px;
+      border-radius: 75px;
+      z-index: 0; }
+    .page-home #team .member .avatar .layer {
+      z-index: 1;
+      border-radius: 75px;
+      display: inline-block;
+      position: absolute;
+      width: 150px;
+      padding: 75px;
+      background: transparent;
+      cursor: pointer;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; }
+      .page-home #team .member .avatar .layer:hover {
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        background: #423A36;
+        opacity: 0.6; }
+  .page-home #team .member .name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=custom.css.map */
