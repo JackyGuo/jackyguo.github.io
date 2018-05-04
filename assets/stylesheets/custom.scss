@@ -48,8 +48,11 @@ header {
       @media (max-width: 576px) {
         font-size: 20px;
       }
-      img {
+      .logo-cn {
         width: 160px;
+      }
+      .logo-en {
+        width: 240px;
       }
     }
     .navbar-nav {

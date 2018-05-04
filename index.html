@@ -6,9 +6,6 @@
     <!-- mobile layout config -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 
-    <!-- load logo css stylesheet -->
-    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/90514/45817/5ae128fff629d81b985ac8b8.css' rel='stylesheet' type='text/css' />
-
     <!-- load third-party css files -->
     <link type='text/css' rel="stylesheet" href="assets/stylesheets/custom.css" />
     <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
@@ -447,11 +444,11 @@
 <script>
   $(function () {
     if (getCookie(name) == "cn") {
-      $("#company").html("<img src='assets/images/name_white.png'>")
-      $("#footer-company").html("<img src='assets/images/name_white.png'>")
+      $("#company").html("<img class='logo-cn' src='assets/images/name_white.png'>")
+      $("#footer-company").html("<img class='logo-cn' src='assets/images/name_white.png'>")
     } else {
-      $("#company").html("Wisteria Club")
-      $("#footer-company").html("Wisteria Club")
+      $("#company").html("<img class='logo-en' src='assets/images/name_en_white.png'>")
+      $("#footer-company").html("<img class='logo-en' src='assets/images/name_en_white.png'>")
     }
   })
 
