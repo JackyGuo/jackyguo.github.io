@@ -41,13 +41,6 @@ header {
       color: $white;
     }
     .navbar-brand {
-      color: $white;
-      font-weight: bold;
-      font-family:'ChannelSlanted2';
-      font-size: 26px;
-      @media (max-width: 576px) {
-        font-size: 20px;
-      }
       .logo-cn {
         width: 160px;
       }
@@ -113,13 +106,13 @@ footer {
         margin-bottom: 15px;
       }
       .navbar-brand {
-        color: $white;
-        font-family:'ChannelSlanted2';
-        font-size: 20px;
-        margin-top: 10px;
-        img {
-          width: 180px;
+        .logo-cn {
+          width: 160px;
         }
+        .logo-en {
+          width: 240px;
+        }
+
       }
     }
   }
