@@ -299,7 +299,7 @@ footer {
   }
 
   #team {
-    padding: 120px 0;
+    padding: 120px 0 80px 0;
     background: $black;
     color: $white;
     .title {
@@ -311,6 +311,7 @@ footer {
       border-bottom: 4px solid $white;
     }
     .member {
+      margin-bottom: 50px;
       .avatar {
         margin-bottom: 20px;
         position: relative;
