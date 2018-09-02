@@ -1,443 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
+<head>
+  <meta charset="UTF-8"/>
 
-    <!-- mobile layout config -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <!-- mobile layout config -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 
-    <!-- load third-party css files -->
-    <link type='text/css' rel="stylesheet" href="assets/stylesheets/custom.css" />
-    <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
-    <link type='text/css' rel="stylesheet" href="assets/stylesheets/fontawesome-all.min.css" />
-    <link type='text/css' rel="stylesheet" href="assets/stylesheets/lity.min.css" />
+  <!-- load third-party css files -->
+  <link type='text/css' rel="stylesheet" href="assets/stylesheets/custom.css" />
+  <link type='text/css' rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
+  <link type='text/css' rel="stylesheet" href="assets/stylesheets/fontawesome-all.min.css" />
+  <link type='text/css' rel="stylesheet" href="assets/stylesheets/lity.min.css" />
 
-    <!-- load third-party js files -->
-    <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascripts/jquery.localize.min.js"></script>
-    <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/javascripts/language.js"></script>
-    <script type="text/javascript" src="assets/javascripts/lity.min.js"></script>
+  <!-- load third-party js files -->
+  <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/jquery.localize.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/language.js"></script>
+  <script type="text/javascript" src="assets/javascripts/lity.min.js"></script>
 
-    <!-- page title -->
-    <title data-localize="company">Wisteria Club</title>
-  </head>
+  <!-- page title -->
+  <title data-localize="company">Wisteria Club</title>
+</head>
 
-  <body>
-    <!-- Header -->
-    <header class="header">
+<body>
+  <header class="header"></header>
+  <script type="application/javascript">
+    $("header").load("components/header.html");
+  </script>
+
+  <!-- main -->
+  <div class="page-home">
+
+    <!-- home -->
+    <section id="home">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div id="company" class="navbar-brand"></div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="nav navbar-nav">
-              <li><a href="/" data-localize="header.about" onclick="scrollToSection('#about'); return false;"></a></li>
-              <li><a href="/" data-localize="header.services" onclick="scrollToSection('#services'); return false;"></a></li>
-              <li><a href="/" data-localize="header.gallery" onclick="scrollToSection('#gallery'); return false;"></a></li>
-              <li><a href="/" data-localize="header.team" onclick="scrollToSection('#team'); return false;"></a></li>
-              <li><a href="/" data-localize="header.contact" onclick="scrollToSection('#contact'); return false;"></a></li>
-              <li>
-                <img src="assets/images/cn.png" alt="" onclick="chgLang('cn');"> / <img src="assets/images/us.png" alt="" onclick="chgLang('en');">
-              </li>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <div class="highlight text-center">
+              <div class="title" data-localize="home.title">An Events Company Based in London</div>
+              <div class="content text-left" data-localize="home.content">Our services include:</div>
+            </div>
+            <ul class="services-items">
+              <li><a data-localize="home.first" href="#">Domestic & Oversea Events</a></li>
+              <li><a data-localize="home.second" href="#">Corporate & Private Ceremony</a></li>
+              <li><a data-localize="home.third" href="#">Conference & Exhibition</a></li>
             </ul>
           </div>
-        </nav>
+          <div class="col-md-7">
+            <div class="text-center">
+              <img src="assets/images/logo.png" alt="" class="logo">
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- main -->
-    <div class="page-home">
+    <!-- about us -->
+    <section id="about" class="text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="title" data-localize="header.about">About Us</div>
+            <hr>
+            <p data-localize="about.first_paragraph">Wisteria Club a boutique events company based in London that specialises in exceptional corporate events and private parties. Catering for all budgets, we provide a very personal bespoke service for our clients, ensuring every aspect of the event is created down to the finest detail. Our highly creative, experienced and supportive team work closely with clients to produce spectacular events, both in the UK and abroad.</p>
+            <p data-localize="about.second_paragraph">Our services include event management, venue finding, meetings & conference management and overseas events. Whether it is a meeting, gala dinner or incentive, we can take the stress out of your events and save you time, money and energy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- home -->
-      <section id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-              <div class="highlight text-center">
-                <div class="title" data-localize="home.title">A Boutique Events Company Based in London</div>
-                <div class="content text-center" data-localize="home.content">Our services include event management, venue finding, meetings & conference management and overseas events.</div>
-                <a href="/about" onclick="scrollToSection('#about'); return false;" class="btn-about-us" data-localize="home.button">Learn More</a>
+
+    <!-- team -->
+    <section id="team" class="text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_1"></div>
+                <img src="assets/images/team/jingjing_ma.jpg" alt="" class="img-thumbnail">
               </div>
+              <div class="name" data-localize="team.names.first"></div>
+              <div class="position" data-localize="team.positions.first"></div>
             </div>
-            <div class="col-md-7">
-              <div class="text-center">
-                <img src="assets/images/logo.png" alt="" class="logo">
+          </div>
+          <div class="col-md-3">
+            <div class="member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_2"></div>
+                <img src="assets/images/team/ningjing_gao.jpg" alt="" class="img-thumbnail">
               </div>
+              <div class="name" data-localize="team.names.second"></div>
+              <div class="position" data-localize="team.positions.second"></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_3"></div>
+                <img src="assets/images/team/kathy_wong.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="name" data-localize="team.names.third"></div>
+              <div class="position" data-localize="team.positions.third"></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="member">
+              <div class="avatar">
+                <div class="layer" role="button" data-toggle="modal" data-target="#modal_4"></div>
+                <img src="assets/images/team/zhiyan_yu.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="name" data-localize="team.names.forth"></div>
+              <div class="position" data-localize="team.positions.forth"></div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- about us -->
-      <section id="about" class="text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10">
-              <div class="title" data-localize="header.about">About Us</div>
-              <hr>
-              <p data-localize="about.first_paragraph">Wisteria Club a boutique events company based in London that specialises in exceptional corporate events and private parties. Catering for all budgets, we provide a very personal bespoke service for our clients, ensuring every aspect of the event is created down to the finest detail. Our highly creative, experienced and supportive team work closely with clients to produce spectacular events, both in the UK and abroad.</p>
-              <p data-localize="about.second_paragraph">Our services include event management, venue finding, meetings & conference management and overseas events. Whether it is a meeting, gala dinner or incentive, we can take the stress out of your events and save you time, money and energy.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- services -->
-      <section id="services" class="text-center">
-        <div class="container">
-          <div class="title" data-localize="header.services">Services</div>
-          <hr>
-          <div class="row items">
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="fab fa-connectdevelop"></i></div>
-                <div class="name" data-localize="services.hand_painting">Hand Painting</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="fab fa-fort-awesome"></i></div>
-                <div class="name" data-localize="services.celebration">Celebration</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="fas fa-handshake"></i></div>
-                <div class="name" data-localize="services.signing">Contract Signing</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="far fa-music"></i></div>
-                <div class="name" data-localize="services.performance">Performance</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="fas fa-heart"></i></div>
-                <div class="name" data-localize="services.charity">Charity</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <div class="name" data-localize="services.communication">Communication</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="item">
-                <div class="icon"><i class="fas fa-trophy-alt"></i></div>
-                <div class="name" data-localize="services.planning">Activity Planning</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- gallery -->
-      <section id="gallery" class="text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-12">
-              <div class="title" data-localize="header.gallery">Gallery</div>
-              <hr>
-              <div class="pics">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_1.jpg" data-lity data-lity-target="assets/images/gallery/gallery_1.jpg" class="w-100" alt="">
-                    </div>
+    <!-- gallery -->
+    <section id="gallery" class="text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="title" data-localize="header.gallery">Gallery</div>
+            <hr>
+            <div class="pics">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_1.jpg" data-lity data-lity-target="assets/images/gallery/gallery_1.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_2.jpg" data-lity data-lity-target="assets/images/gallery/gallery_2.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_2.jpg" data-lity data-lity-target="assets/images/gallery/gallery_2.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_3.jpg" data-lity data-lity-target="assets/images/gallery/gallery_3.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_3.jpg" data-lity data-lity-target="assets/images/gallery/gallery_3.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_4.jpg" data-lity data-lity-target="assets/images/gallery/gallery_4.jpg" class="w-100 up" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_4.jpg" data-lity data-lity-target="assets/images/gallery/gallery_4.jpg" class="w-100 up" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_5.jpg" data-lity data-lity-target="assets/images/gallery/gallery_5.jpg" class="w-100 up" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_5.jpg" data-lity data-lity-target="assets/images/gallery/gallery_5.jpg" class="w-100 up" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_6.jpg" data-lity data-lity-target="assets/images/gallery/gallery_6.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_6.jpg" data-lity data-lity-target="assets/images/gallery/gallery_6.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_7.jpg" data-lity data-lity-target="assets/images/gallery/gallery_7.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_7.jpg" data-lity data-lity-target="assets/images/gallery/gallery_7.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_8.jpg" data-lity data-lity-target="assets/images/gallery/gallery_8.jpg" class="w-100 up" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_8.jpg" data-lity data-lity-target="assets/images/gallery/gallery_8.jpg" class="w-100 up" alt="">
                   </div>
-                  <div class="col-md-3 hide">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_9.jpg" data-lity data-lity-target="assets/images/gallery/gallery_9.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3 hide">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_9.jpg" data-lity data-lity-target="assets/images/gallery/gallery_9.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3 hide">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_10.jpg" data-lity data-lity-target="assets/images/gallery/gallery_10.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3 hide">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_10.jpg" data-lity data-lity-target="assets/images/gallery/gallery_10.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3 hide">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_11.jpg" data-lity data-lity-target="assets/images/gallery/gallery_11.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3 hide">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_11.jpg" data-lity data-lity-target="assets/images/gallery/gallery_11.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3 hide">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_12.jpg" data-lity data-lity-target="assets/images/gallery/gallery_12.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3 hide">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_12.jpg" data-lity data-lity-target="assets/images/gallery/gallery_12.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3 hide">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_13.jpg" data-lity data-lity-target="assets/images/gallery/gallery_13.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3 hide">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_13.jpg" data-lity data-lity-target="assets/images/gallery/gallery_13.jpg" class="w-100" alt="">
                   </div>
-                  <div class="col-md-3 hide">
-                    <div class="pic">
-                      <img src="assets/images/gallery/gallery_14.jpg" data-lity data-lity-target="assets/images/gallery/gallery_14.jpg" class="w-100" alt="">
-                    </div>
+                </div>
+                <div class="col-md-3 hide">
+                  <div class="pic">
+                    <img src="assets/images/gallery/gallery_14.jpg" data-lity data-lity-target="assets/images/gallery/gallery_14.jpg" class="w-100" alt="">
                   </div>
                 </div>
               </div>
-              <a href="#" data-localize="gallery.button" class="btn-more" onclick="$('.pics .hide').fadeIn(800); $(this).hide(); return false;">More Pictures</a>
+            </div>
+            <a href="#" data-localize="gallery.button" class="btn-more" onclick="$('.pics .hide').fadeIn(800); $(this).hide(); return false;">More Pictures</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- services -->
+    <section id="services" class="text-center">
+      <div class="container">
+        <div class="title" data-localize="header.services">Services</div>
+        <hr>
+        <div class="row items">
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="fab fa-connectdevelop"></i></div>
+              <div class="name" data-localize="services.hand_painting">Hand Painting</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="fab fa-fort-awesome"></i></div>
+              <div class="name" data-localize="services.celebration">Celebration</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="fas fa-handshake"></i></div>
+              <div class="name" data-localize="services.signing">Contract Signing</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="far fa-music"></i></div>
+              <div class="name" data-localize="services.performance">Performance</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="fas fa-heart"></i></div>
+              <div class="name" data-localize="services.charity">Charity</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="fas fa-users"></i></div>
+              <div class="name" data-localize="services.communication">Communication</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="item">
+              <div class="icon"><i class="fas fa-trophy-alt"></i></div>
+              <div class="name" data-localize="services.planning">Activity Planning</div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- team -->
-      <section id="team" class="text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-12">
-              <div class="title" data-localize="header.team">Team</div>
-              <hr>
-            </div>
-            <div class="col-md-3">
-              <div class="member">
-                <div class="avatar">
-                  <div class="layer" role="button" data-toggle="modal" data-target="#modal_1"></div>
-                  <img src="assets/images/team/jingjing_ma.jpg" alt="" class="img-thumbnail">
-                </div>
-                <div class="name" data-localize="team.names.first"></div>
-                <div class="position" data-localize="team.positions.first"></div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="member">
-                <div class="avatar">
-                  <div class="layer" role="button" data-toggle="modal" data-target="#modal_2"></div>
-                  <img src="assets/images/team/ningjing_gao.jpg" alt="" class="img-thumbnail">
-                </div>
-                <div class="name" data-localize="team.names.second"></div>
-                <div class="position" data-localize="team.positions.second"></div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="member">
-                <div class="avatar">
-                  <div class="layer" role="button" data-toggle="modal" data-target="#modal_3"></div>
-                  <img src="assets/images/team/kathy_wong.jpg" alt="" class="img-thumbnail">
-                </div>
-                <div class="name" data-localize="team.names.third"></div>
-                <div class="position" data-localize="team.positions.third"></div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="member">
-                <div class="avatar">
-                  <div class="layer" role="button" data-toggle="modal" data-target="#modal_4"></div>
-                  <img src="assets/images/team/zhiyan_yu.jpg" alt="" class="img-thumbnail">
-                </div>
-                <div class="name" data-localize="team.names.forth"></div>
-                <div class="position" data-localize="team.positions.forth"></div>
-              </div>
-            </div>
-          </div>
+
+  </div>
+
+  <!-- 1st team member modal -->
+  <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" data-localize="team.names.first"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         </div>
-      </section>
-    </div>
-
-    <!-- 1st team member modal -->
-    <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" data-localize="team.names.first"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <h6 data-localize="team.positions.first"></h6>
-            <p data-localize="team.descs.first"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
-          </div>
+        <div class="modal-body">
+          <h6 data-localize="team.positions.first"></h6>
+          <p data-localize="team.descs.first"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- 2nd team member modal -->
-    <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" data-localize="team.names.second"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <!-- 2nd team member modal -->
+  <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" data-localize="team.names.second"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <h6 data-localize="team.positions.second"></h6>
+          <p data-localize="team.descs.second"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3rd team member modal -->
+  <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" data-localize="team.names.third"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <h6 data-localize="team.positions.third"></h6>
+          <p data-localize="team.descs.third"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4th team member modal -->
+  <div class="modal fade" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" data-localize="team.names.forth"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <h6 data-localize="team.positions.forth"></h6>
+          <p data-localize="team.descs.forth"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="contact" class="footer">
+    <div class="upper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-3">
+            <div class="wrapper">
+              <div class="title"><span data-localize="header.contact">Contact Us</span></div>
+              <p>
+                <span data-localize="company">Wisteria Club</span>
+                <br>
+                221B Baker Street
+                <br>
+                020-1234-088
+                <br>
+                example@wisteriaclub.com
+              </p>
+            </div>
           </div>
-          <div class="modal-body">
-            <h6 data-localize="team.positions.second"></h6>
-            <p data-localize="team.descs.second"></p>
+          <div class="col-xs-4 col-sm-3">
+            <div class="wrapper">
+              <div class="title"><span data-localize="header.services">Services</span></div>
+              <p>
+                <span data-localize="services.hand_painting">Hand Painting</span>
+                <br>
+                <span data-localize="services.celebration">Celebration</span>
+                <br>
+                <span data-localize="services.signing">Contract Signing</span>
+                <br>
+                <span data-localize="services.performance">Performance</span>
+                <br>
+                <span data-localize="services.charity">Charity</span>
+                <br>
+                <span data-localize="services.communication">Communication</span>
+                <br>
+                <span data-localize="services.planning">Activity Planning</span>
+              </p>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
+          <div class="col-xs-4 col-sm-3">
+            <div class="wrapper">
+              <div class="title" data-localize="footer.site_map">Site Map</div>
+              <p>
+                <a href="#" data-localize="header.home" onclick="scrollToSection('header'); return false;">Home</a>
+                <br>
+                <a href="#" data-localize="header.about" onclick="scrollToSection('#about'); return false;">About Us</a>
+                <br>
+                <a href="#" data-localize="header.services" onclick="scrollToSection('#services'); return false;">Services</a>
+                <br>
+                <a href="#" data-localize="header.gallery" onclick="scrollToSection('#gallery'); return false;">Gallery</a>
+                <br>
+                <a href="#" data-localize="header.team" onclick="scrollToSection('#team'); return false;">Team</a>
+                <br>
+                <a href="#" data-localize="header.contact" onclick="scrollToSection('#contact'); return false;">Contact Us</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12 text-right">
+            <div class="wrapper">
+              <a href="/" id="footer-company" data-localize="footer.company" class="navbar-brand"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- 3rd team member modal -->
-    <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" data-localize="team.names.third"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="lower">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <p data-localize="footer.bottom_line">Wisteria Club - A Boutique Events Company Based in London</p>
           </div>
-          <div class="modal-body">
-            <h6 data-localize="team.positions.third"></h6>
-            <p data-localize="team.descs.third"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
+          <div class="col-md-3 ">
+            <div class="icons">
+              <div class="icon"><i class="fab fa-facebook-square"></i></div>
+              <div class="icon"><i class="fab fa-twitter-square"></i></div>
+              <div class="icon"><i class="fab fa-weibo"></i></div>
+              <div class="icon"><i class="fab fa-weixin"></i></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- 4th team member modal -->
-    <div class="modal fade" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" data-localize="team.names.forth"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <h6 data-localize="team.positions.forth"></h6>
-            <p data-localize="team.descs.forth"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-localize="team.button"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer id="contact" class="footer">
-      <div class="upper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-4 col-sm-3">
-              <div class="wrapper">
-                <div class="title"><span data-localize="header.contact">Contact Us</span></div>
-                <p>
-                  <span data-localize="company">Wisteria Club</span>
-                  <br>
-                  221B Baker Street
-                  <br>
-                  020-1234-088
-                  <br>
-                  example@wisteriaclub.com
-                </p>
-              </div>
-            </div>
-            <div class="col-xs-4 col-sm-3">
-              <div class="wrapper">
-                <div class="title"><span data-localize="header.services">Services</span></div>
-                <p>
-                  <span data-localize="services.hand_painting">Hand Painting</span>
-                  <br>
-                  <span data-localize="services.celebration">Celebration</span>
-                  <br>
-                  <span data-localize="services.signing">Contract Signing</span>
-                  <br>
-                  <span data-localize="services.performance">Performance</span>
-                  <br>
-                  <span data-localize="services.charity">Charity</span>
-                  <br>
-                  <span data-localize="services.communication">Communication</span>
-                  <br>
-                  <span data-localize="services.planning">Activity Planning</span>
-                </p>
-              </div>
-            </div>
-            <div class="col-xs-4 col-sm-3">
-              <div class="wrapper">
-                <div class="title" data-localize="footer.site_map">Site Map</div>
-                <p>
-                  <a href="#" data-localize="header.home" onclick="scrollToSection('header'); return false;">Home</a>
-                  <br>
-                  <a href="#" data-localize="header.about" onclick="scrollToSection('#about'); return false;">About Us</a>
-                  <br>
-                  <a href="#" data-localize="header.services" onclick="scrollToSection('#services'); return false;">Services</a>
-                  <br>
-                  <a href="#" data-localize="header.gallery" onclick="scrollToSection('#gallery'); return false;">Gallery</a>
-                  <br>
-                  <a href="#" data-localize="header.team" onclick="scrollToSection('#team'); return false;">Team</a>
-                  <br>
-                  <a href="#" data-localize="header.contact" onclick="scrollToSection('#contact'); return false;">Contact Us</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12 text-right">
-              <div class="wrapper">
-                <a href="/" id="footer-company" data-localize="footer.company" class="navbar-brand"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lower">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <p data-localize="footer.bottom_line">Wisteria Club - A Boutique Events Company Based in London</p>
-            </div>
-            <div class="col-md-3 ">
-              <div class="icons">
-                <div class="icon"><i class="fab fa-facebook-square"></i></div>
-                <div class="icon"><i class="fab fa-twitter-square"></i></div>
-                <div class="icon"><i class="fab fa-weibo"></i></div>
-                <div class="icon"><i class="fab fa-weixin"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>
 
 <!-- custom javascript scripts -->

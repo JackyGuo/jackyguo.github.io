@@ -9,13 +9,15 @@
     "team": "Team"
   },
   "home": {
-    "title": "A Boutique Events Company Based in London",
-    "content": "Our services include event management, venue finding, meetings & conference management and overseas events.",
-    "button": "Learn More"
+    "title": "An Events Company Based in London",
+    "content": "Our services include:",
+    "first": "Domestic & Oversea Events",
+    "second": "Corporate & Private Ceremony",
+    "third": "Conference & Exhibition"
   },
   "about": {
-    "first_paragraph": "Wisteria Club a boutique events company based in London that specialises in exceptional corporate events and private parties. Catering for all budgets, we provide a very personal bespoke service for our clients, ensuring every aspect of the event is created down to the finest detail. Our highly creative, experienced and supportive team work closely with clients to produce spectacular events, both in the UK and abroad.",
-    "second_paragraph": "Our services include event management, venue finding, meetings & conference management and overseas events. Whether it is a meeting, gala dinner or incentive, we can take the stress out of your events and save you time, money and energy."
+    "first_paragraph": "Wisteria Club, an events company based in London that specialises in exceptional corporate events and private parties. Catering for all budgets, we provide a very personal bespoke service for our clients, ensuring every aspect of the event is created down to the finest detail. Our highly creative, experienced and supportive team works closely with clients to produce spectacular events, both in the UK and abroad.",
+    "second_paragraph": "Our services include domestic & overseas events, corperate & private ceremony, conference and exhibition"
   },
   "services": {
     "hand_painting": "Hand Painting",

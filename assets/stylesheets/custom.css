@@ -18,10 +18,10 @@ header .navbar {
     width: 160px; }
   header .navbar .navbar-brand .logo-en {
     width: 240px; }
-  header .navbar .navbar-nav li {
+  header .navbar .navbar-nav .nav-item {
     color: #FFFFFF;
     margin: 30px 0 30px 40px; }
-    header .navbar .navbar-nav li a {
+    header .navbar .navbar-nav .nav-item .nav-item-link {
       padding: 4px 0 4px 0;
       border-bottom: 3px solid transparent;
       color: #FFFFFF;
@@ -31,17 +31,22 @@ header .navbar {
       -moz-transition: 0.5s;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s; }
-      header .navbar .navbar-nav li a:hover {
+      header .navbar .navbar-nav .nav-item .nav-item-link:hover {
         color: #FFFFFF;
         border-bottom: 3px solid #FFFFFF;
         transition: 0.5s;
         -moz-transition: 0.5s;
         -webkit-transition: 0.5s;
         -o-transition: 0.5s; }
-      header .navbar .navbar-nav li a:visited {
+      header .navbar .navbar-nav .nav-item .nav-item-link:visited {
         color: #FFFFFF; }
-    header .navbar .navbar-nav li img {
+    header .navbar .navbar-nav .nav-item img {
       cursor: pointer; }
+    header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item a {
+      color: #423A36;
+      font-weight: normal; }
+      header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item a:hover {
+        color: rebeccapurple; }
 
 /* ===== Footer ===== */
 footer {
@@ -106,11 +111,12 @@ footer {
     .page-home #home .highlight .title {
       font-size: 24px;
       font-weight: bold;
-      padding: 0 20px; }
+      padding: 5px 20px; }
     .page-home #home .highlight .content {
       margin-top: 30px;
       font-size: 18px;
-      line-height: 30px; }
+      line-height: 30px;
+      padding: 5px 20px; }
     .page-home #home .highlight .btn-about-us {
       margin: 40px 0 20px 0;
       padding: 18px 30px;
@@ -129,6 +135,10 @@ footer {
         -moz-transition: 0.5s;
         -webkit-transition: 0.5s;
         -o-transition: 0.5s; }
+  .page-home #home .services-items a {
+    color: #FFFFFF; }
+    .page-home #home .services-items a:hover {
+      color: pink; }
   .page-home #home .logo {
     margin: 40px 0 80px 0;
     width: 600px; }
